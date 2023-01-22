@@ -1,0 +1,214 @@
+body{
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 800;
+    
+}
+
+p{
+    color:#8f8f8f
+}
+
+/* Headings */
+.big-heading{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+.section-heading{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+.ctaHeading{
+    font-family: "montserrat";
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    /*margin-bottom:9rem; I have added this line because my heading is merging with the download buttons if I didn't put the padding at bottom  */
+    
+}
+/* Containers */
+.container-fluid{
+    padding: 7% 15%;  
+ }
+
+ /* Sections */
+ .colored-section{
+    background-color: #ff4c68;
+    color: #fff;
+ }
+
+ .white-section{
+    background-color: #fff;
+ }
+
+/* Navigation Bar */
+
+.navbar{
+    padding-bottom: 4.5rem;  /******** you can also add value as 0 0 4.5rem; if logo and h1 text doesn't align in the same line *******/
+}
+
+.navbar-brand{
+    font-size: 2.5rem;
+    font-family: "Ubuntu";
+}
+.nav-item{
+    padding: 0 18px;
+}
+.nav-link{
+    font-size: 18px;  /*as navbar is already a responsive container so we dont have to add rem or % to our sizes */
+   
+}
+
+/* Download Button */
+
+.download-button{
+    margin: 5% 3% 5% 0;
+}
+
+/* Title Section */
+
+#title .container-fluid{
+    padding: 3% 15% 7%;       /* We can do this technique to specifically dfeine the selectors. and this will over ride the old css for 'container-fluid' of #title section */
+    text-align: left;
+}
+
+/* Title Image */
+
+.title-image{
+    width: 28%;
+    transform: rotate(25deg);   /* to rotate your images */
+    padding-left: 3rem;
+    position: absolute;
+    right: 24%;
+    z-index:  ;   /*  We have left this blank because we didn't needed to change this. Our work gets done by only changing the 'positions'   */
+}
+
+/* Features Section */
+
+#features{
+    
+    background-color: #fff;
+    position: relative ;
+    z-index:  ;    /*  We have left this blank because we didn't needed to change this. Our work gets done by only changing the 'positions'   */
+}
+
+.feature-title{
+    font-size: 1.5rem;
+    height: 3.5rem;   /** by changing the height to 3.5rem I finally achieved the 'Guaranteed to work' section comes in the sameline   also I've to make changes in some other section too which you can see in below codes **/
+}
+
+.feature-box{
+    /* text-align: center; */
+    padding: 3% 3%;  /** also I've to change the padding from '5%' to '3% 3%' I finally achieved the 'Guaranteed to work' section comes in the sameline **/
+    
+}
+
+.icon{
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+.icon:hover{
+    color: #ff4c68;
+}
+
+/* Testimonial Section */
+
+#testimonials{        /*** This style will override the colors in 'colored-section' because here we're styling an 'id' which is much superior than a 'class'  *### id's > classes > elements  ###*  ***/
+     
+    /* text-align: center; */
+    background-color: #ef8172;   
+    
+}
+
+.testimonial-text{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.testimonial-image{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+/* Press Section  */
+
+#press{
+    background-color: #ef8172;
+    /* text-align: center; */
+    padding-bottom: 3%;
+}
+
+.press-logo{
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+
+#pricing{
+    padding: 100px;
+    /* text-align: center; */
+}
+.price-text{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.pricing-column{
+    padding: 3% 2%;
+}
+
+/* Call to Action Section */
+
+
+
+/* Footer Section */
+
+.social-icon{
+    margin: 20px 10px;
+}
+
+
+@media (max-width: 992px){
+
+    #title{
+        text-align: center;
+    }
+    .title-image{
+        position: static;
+        width: 60%;
+        transform: rotate(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
